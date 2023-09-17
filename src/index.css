@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Nunito+Sans:opsz,wght@6..12,600&family=Victor+Mono:wght@100&display=swap');
+#navbar-logo-hyperlink{
+    text-decoration: none;
+}
+#navbar-div1{
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    
+}
+#navbar-div2{
+    display: none;
+}
+
+#navbar{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#iPhone1-div-homepage{
+    background-color: black;
+    min-height: 80vh;
+}
+#iphone15pro_cover1{
+    margin-bottom: 0px;
+    animation-name: cover1_15pro;
+    animation-duration: 2s;
+    animation-direction: reverse; 
+}
+#iphone15_cover1{
+    opacity: 1;
+    animation-name:cover1_15 ;
+    animation-duration: 2s;
+    animation-direction: reverse;
+}
+#iPhone2-div-homepage{
+    background-color: rgb(245, 245, 247);
+}
+@keyframes cover1_15pro {
+    0% {padding-left: 0%;}
+    100%{padding-left: 50%;}
+}
+@keyframes cover1_15 {
+    0% {padding-left: 0%;}
+    100%{padding-left: 50%; opacity: 1;}
+}
+.text-overlay {
+    position: absolute; /* Position the text relative to the container */
+    top: 20%; /* Position from the top edge */
+    left: 20%; /* Position from the left edge */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 10px; /* Add padding for spacing */
+    color: white; /* Text color */
+    animation-name: overlay_animation;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    opacity: 100%;
+  }
+.text-overlay1 {
+    position: absolute; /* Position the text relative to the container */
+    top: 100%; /* Position from the top edge */
+    left: 20%; /* Position from the left edge */
+    background-color: hsl(240, 11%, 96%); /* Semi-transparent background for better readability */
+    padding: 10px; /* Add padding for spacing */
+    color: black; /* Text color */
+    animation-name: overlay_animation;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    opacity: 100%;
+  }
+#iphone15pro_cover2{
+    display: none;
+    
+}
+#iphone15pro_h1{
+    font-size: 100px;
+}
+
+
+
+@keyframes overlay_animation {
+    0%{opacity: 100%;}
+    50%{}
+    100%{opacity: 0%;}
+}
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1500px){
+    #navbar-div1{
+        padding-left: 5%;
+        padding-right: 5%;
+        
+    }
+  }
+  #iphone15_cover2{
+    display: none;
+  }
+  
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1000px){
+    #navbar-div1{
+        padding-left: 20%;
+        display: none;
+    }
+    #navbar-div2{
+        display: block;
+        display: flex;
+    }
+    #iphone15pro_cover2{
+        display: none;
+    }
+    .text-overlay {
+        position: absolute; /* Position the text relative to the container */
+        top: 23%; /* Position from the top edge */
+        left: -15%; /* Position from the left edge */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+        padding: 10px; /* Add padding for spacing */
+        color: white; /* Text color */
+        scale: 0.7;
+      }
+      #iphone15pro_h1{
+        font-size: 50px;
+      }
+    #iphone15pro_cover2{
+        display: block;
+        scale: 0.6;
+        padding-top: 37%;
+        animation: reverse;
+        animation-duration: 2s;
+        animation-name: cover2_15pro;
+        
+    }
+    @keyframes cover2_15pro {
+        0%{}
+        100%{padding-left: 50%;}
+        
+    }
+    #iphone15pro_cover1{
+        display: none;
+    }
+    .text-overlay1{
+        position: absolute; /* Position the text relative to the container */
+        top: 135%; /* Position from the top edge */
+        left: -14%; /* Position from the left edge */
+        background-color:  hsl(240, 11%, 96%); /* Semi-transparent background for better readability */
+        padding: 10px; /* Add padding for spacing */
+        color: rgb(0, 0, 0); /* Text color */
+        scale: 0.75;
+        
+    }
+    #iphone15_cover2{
+        display: block;
+        padding-top: 80%;
+        width: 100%;
+
+      }
+    #iphone15_cover1{
+        display: none;
+    }
+
+
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
